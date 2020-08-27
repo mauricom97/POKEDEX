@@ -3,7 +3,7 @@
     <div class="column is-half is-offset-one-quarter">
       <img src="./assets/pokemon-logo.png">
       <input type="text" name="" id="" class="input is-rounded" placeholder="Buscar pokemon pelo nome" v-model="busca">
-      <button class="button is-fullwidth is-success" id="buscaBtn">Buscar</button>
+      
     <div v-for="(poke,index) in resultadoBusca" :key="poke.url">
      <Pokemon :name="poke.name" :url="poke.url" :num="index+1"/>
     </div>
